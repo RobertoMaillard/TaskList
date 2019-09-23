@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><taskitems>
+  
+  
+  
+  
+  
+<task><shortDescription>Previous task</shortDescription><details>Previous task are marked in light gray</details><deadline>01-01-2019</deadline></task><task><shortDescription>Today's task</shortDescription><details>Today's task are marked in light gray</details><deadline>23-09-2019</deadline></task><task><shortDescription>Tomorrow's task</shortDescription><details>Tomorrow's task are marked in orange</details><deadline>24-09-2019</deadline></task><task><shortDescription>Future task</shortDescription><details>Future task is not marked</details><deadline>01-01-2029</deadline></task></taskitems>

@@ -1,0 +1,53 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<!--Created by Roberto Maillard on 19/9/2019-->
+<!--Main window-->
+
+<BorderPane fx:id="mainBorderPane" fx:controller="com.robertomaillard.tasklist.WindowController"
+            xmlns:fx="http://javafx.com/fxml" stylesheets="@style.css">
+    <top>
+        <VBox>
+            <ToolBar>
+                <HBox spacing="10">
+                    <Button text="New task..." onAction="#showNewItemDialog">
+                        <tooltip>
+                            <Tooltip text="Add a new task"/>
+                        </tooltip>
+                    </Button>
+                    <ToggleButton fx:id="filterToggleButton" text="Due today" onAction="#handleFilterButton">
+                        <tooltip>
+                            <Tooltip text="Button Down: Show Today's tasks only. Button Up: Show all tasks"/>
+                        </tooltip>
+                    </ToggleButton>
+                </HBox>
+            </ToolBar>
+        </VBox>
+    </top>
+    <left>
+        <ListView fx:id="taskListView" onKeyPressed="#handleKeyPressed">
+        </ListView>
+    </left>
+    <center>
+        <VBox style="-fx-background-color: white">
+            <TextArea fx:id="itemDetailsTextArea" VBox.vgrow="ALWAYS" wrapText="true"/>
+            <HBox>
+                <padding>
+                    <Insets top="10" bottom="10" left="10" />
+                </padding>
+                <Label text="Due: " style="-fx-background-color: white">
+                    <font>
+                        <Font name="Arial bold" size="16"/>
+                    </font>
+                </Label>
+                <Label fx:id="deadLineLabel" style="-fx-background-color: white">
+                    <font>
+                        <Font name="Arial bold" size="16"/>
+                    </font>
+                </Label>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

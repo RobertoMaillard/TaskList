@@ -1,0 +1,9 @@
+/* Created by Roberto Maillard */
+
+#filterToggleButton {
+    -fx-text-fill: red;
+}
+
+#itemDetailsTextArea {
+    -fx-background-color: azure;
+}
